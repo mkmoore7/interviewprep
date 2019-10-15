@@ -23,6 +23,17 @@ def main():
     citations = [1,4,1,4,2,1,3,5,6]
     print(h_index(citations))
 
+def improved_h_index(citations):
+    citations.sort()
+    l = len(citations)
+    for i, c in enumerate(citations):
+        if c >= l-i:
+            return l-i
+    return 0
+
+def main():
+    citations = [1,4,1,4,2,1,3,5,6]
+    print(improved_h_index(citations))
 
 if __name__ =="__main__":
     main()

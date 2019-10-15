@@ -19,9 +19,6 @@ def count_h(citations, h):
             count+=1
     return count
 
-def main():
-    citations = [1,4,1,4,2,1,3,5,6]
-    print(h_index(citations))
 
 def improved_h_index(citations):
     citations.sort()

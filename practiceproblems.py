@@ -1,5 +1,17 @@
 #I am working my way through Elements of Programming Interviews, and my code lives here.
 
+#going off book today and doing one from the interwebz
+#Count the occurence of a given character in a string
+#input: a string
+#parameters: the character we want to count
+#output: the number of times that character appears in the string.
+def count_chars_naive(x, c):
+    count =0
+    for ch in x:
+        if ch == c:
+            count+=1
+    return count
+
 #input: an array of positive integers representing the number of citations in a list of publications.
 #output: the h-index (the largest value of h s.t. the researcher has published h papers that have been cited at least h times)
 def h_index(citations):
@@ -29,8 +41,10 @@ def improved_h_index(citations):
     return 0
 
 def main():
-    citations = [1,4,1,4,2,1,3,5,6]
-    print(improved_h_index(citations))
+    #citations = [1,4,1,4,2,1,3,5,6]
+    #print(improved_h_index(citations))
+    print(count_chars_naive('this is a test', 't'))
+
 
 if __name__ =="__main__":
     main()

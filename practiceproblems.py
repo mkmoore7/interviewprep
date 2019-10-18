@@ -1,5 +1,17 @@
 #I am working my way through Elements of Programming Interviews, and my code lives here.
 
+#fizz-buzz
+def fizz_buzz(fizz, buzz, n):
+    for x in range(0, n):
+        if x % fizz == 0 and x % buzz==0:
+            print("{}: FizzBuzz".format(x))
+        elif x % fizz == 0:
+            print("{}: Fizz".format(x))
+        elif x % buzz ==0:
+            print("{}: Buzz".format(x))
+
+
+
 #going off book today and doing one from the interwebz
 #Count the occurence of a given character in a string
 #input: a string
@@ -43,7 +55,8 @@ def improved_h_index(citations):
 def main():
     #citations = [1,4,1,4,2,1,3,5,6]
     #print(improved_h_index(citations))
-    print(count_chars_naive('this is a test', 't'))
+    #print(count_chars_naive('this is a test', 't'))
+    print(fizz_buzz(3, 5, 50))
 
 
 if __name__ =="__main__":
